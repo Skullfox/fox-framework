@@ -1,0 +1,55 @@
+﻿<Key ID="str_mission">
+<English>Missison</English>
+<German>Mission</German>
+</Key>
+
+<Key ID="str_complete">
+<English>Complete</English>
+<German>Abgeschlossen</German>
+</Key>
+
+<Key ID="str_placeholder">
+<English>Placeholder</English>
+<German>Platzhalter</German>
+</Key>
+
+<Key ID="str_no_mission_available">
+<English>No mission available</English>
+<German>Keine Mission verfügbar</German>
+</Key>
+
+
+<Key ID="str_clean_city_xyz">
+<English>Search and Destroy</English>
+<German>Suchen und Vernichten</German>
+</Key>
+
+<Key ID="str_clean_city_desc">
+<English>Clean the OA from all enemy units and destroy the enemy radio generator.</English>
+<German>Säubern sie das Gebiet von Feindeinheiten zerstören sie den Stromgenerator für die Funkanlage. </German>
+</Key>
+
+<Key ID="str_destroy_chaches_xyz">
+<English>Weaponcache</English>
+<German>Waffenlager</German>
+</Key>
+
+<Key ID="str_destroy_chaches_desc">
+<English>Destroy all 3 hidden weaponchaches in the OA.</English>
+<German>Zerstören sie alle 3 versteckten Waffenlager im Zielgebiet.</German>
+</Key>
+
+<Key ID="str_kill_hvt_desc_xyz">
+<English>Kill HVT</English>
+<German>Töten eines HVT</German>w
+</Key>
+
+<Key ID="str_kill_hvt_desc">
+<English>Kill the HVT and clean the OA and destroy the enemy radio generator.</English>
+<German>Töten sie den HVT,säubern sie das Zielgebiet und zerstören sie den Stromgenerator für die Funkanlage.</German>
+</Key>
+
+
+
+
+

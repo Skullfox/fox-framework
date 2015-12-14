@@ -1,0 +1,48 @@
+Author = "[FOX] Shiragami"; 
+loadScreen = "assets\img\loadscreen.jpg";
+OnLoadName = "";
+respawn = 3;
+respawnDelay =5 ;
+disabledAI = 1;
+enableDebugConsole = 1;
+
+allowFunctionsRecompile = 1;
+respawnTemplates[] = {"MenuPosition"};
+#include "R3F_LOG\desc_include.h"
+class Header
+{
+	gameType = COOP;       
+	minPlayers = 1;        
+	maxPlayers = 30;  
+
+};
+
+#include "params.hpp"
+
+#include "pxs_satcom_a3\init_interface.hpp"
+
+#include "common.hpp"
+#include "missionControl.hpp"
+
+
+class CfgFunctions
+{
+	#include "cfg\CfgFunctions.hpp"
+};
+
+class CfgNotifications
+{
+	#include "cfg\CfgNotifications.hpp"
+};
+
+
+class CfgMusic
+{
+	tracks[]={};
+
+	class foxIntro
+	{
+		name = "";
+		sound[] = {"\assets\music\intro.ogg", db+5, 1.0};
+	};
+};
