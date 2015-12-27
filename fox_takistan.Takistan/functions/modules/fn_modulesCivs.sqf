@@ -1,0 +1,1 @@
+[]execVM "cos\cosInit.sqf";

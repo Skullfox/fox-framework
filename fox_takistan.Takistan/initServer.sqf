@@ -17,12 +17,33 @@ diag_log format ["#######%1 start server #######",missionName + "_" + worldname]
 */
 
 /* Mission params */
+
 _missionOrderParam = "missionOrderParam" call BIS_fnc_getParamValue;
 server setvariable ["database",missionName + "_" + worldName,true];
 
 _eosSupportTimerParam = "eosSupportTimerParam" call BIS_fnc_getParamValue;
 server setvariable ["supportTimer",_eosSupportTimerParam,true];
 
+
+
+/* Module: IED*/
+_ieds = "iedsParam" call BIS_fnc_getParamValue;
+if(_ieds isEqualTo 1)then{
+
+	//[] call fox_fnc_modulesIeds;
+
+};
+
+/* Module: Civs aka COS*/
+_cos = "cosParam" call BIS_fnc_getParamValue;
+if(_cos isEqualTo 1)then{
+
+	[] call fox_fnc_modulesCivs;
+
+};
+
+
+/* -------------- */
 
 if(dev)then{
 	//_null = [] execVM "scripts\strongpoints.sqf";
@@ -35,9 +56,5 @@ if(dev)then{
 [] call fox_fnc_initHq;
 [] call fox_fnc_initMhq;
 [] call fox_fnc_supportMarkerHeli;
-[] call fox_fnc_modulesIeds;
-
 
 serverReady = TRUE;
-
-

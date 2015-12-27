@@ -15,32 +15,35 @@ if(!dev)then{
 	["Intro skipped"] call fox_fnc_log;
 };
 
-_uid = getPlayerUID player;
-
-/*
-if( (typeOf player == "B_G_Soldier_TL_F" ) OR (typeOf player == "B_G_Soldier_TL_F" ) OR (  _uid in uidsMissionAccess  )  OR (_uid  == "_SP_PLAYER_") )then{
-    
-    //["player", [0x0F], -66, ["client\menu\menu.sqf", "main"]] call CBA_ui_fnc_add;
-    
-    execVM "client\menu\missions.sqf";
-        
-};
-*/
+profileNamespace setVariable["fox_uid",getPlayerUID player];
 
 /* Local params */
-_allPlayerMedicsParam = "allPlayerMedicsParam" call BIS_fnc_getParamValue;
+_allPlayerMedics = "allPlayerMedicsParam" call BIS_fnc_getParamValue;
 
-if(_allPlayerMedicsParam == 1)then{
+if(_allPlayerMedics isEqualTo 1)then{
 
 	player setvariable ["ace_medical_medicClass", 1, true];
 
+//ACE_IsEngineer
+
 };
+
+/* Spawn with custom loadout */
+
+_customLoadout = "spawnCustomLoadoutParam" call BIS_fnc_getParamValue;
+
+if(_customLoadout isEqualTo 1)then{
+
+	[player] call fox_fnc_clientCustomLoadout;
+
+};
+
 /* ------------ */
 
-[] call fox_fnc_sandEffects;
-[] call fox_fnc_cheatMenu;
+//[] call fox_fnc_sandEffects;
+//[] call fox_fnc_cheatMenu;
 [] call fox_fnc_clientInteractionAce;
-[player] call fox_fnc_clientCustomLoadout;
+//[] call fox_fnc_modulesJerryCan;
 systemChat "Client ready";
 
 

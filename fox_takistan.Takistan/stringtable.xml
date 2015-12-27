@@ -29,12 +29,12 @@
 <German>Säubern sie das Gebiet von Feindeinheiten zerstören sie den Stromgenerator für die Funkanlage. </German>
 </Key>
 
-<Key ID="str_destroy_chaches_xyz">
+<Key ID="str_Chache_title">
 <English>Weaponcache</English>
 <German>Waffenlager</German>
 </Key>
 
-<Key ID="str_destroy_chaches_desc">
+<Key ID="str_Chache_desc">
 <English>Destroy all 3 hidden weaponchaches in the OA.</English>
 <German>Zerstören sie alle 3 versteckten Waffenlager im Zielgebiet.</German>
 </Key>

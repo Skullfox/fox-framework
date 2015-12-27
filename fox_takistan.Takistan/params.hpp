@@ -13,7 +13,7 @@
 		title = "Zivilisten";
 		values[] = {0,1};
 		texts[] = {"Aus","Ein"}; 
-		default = 1;
+		default = 0;
 	};
 
 	class ambientHeliParam
@@ -54,6 +54,14 @@
 		values[] = {0,1};
 		texts[] = {"Nein,Ja"}; 
 		default = 1;
+	};
+
+	class spawnCustomLoadoutParam
+	{
+		title = "Spawn mit Custom Loadout";
+		values[] = {0,1};
+		texts[] = {"Nein,Ja"}; 
+		default = 0;
 	};
 	
 };

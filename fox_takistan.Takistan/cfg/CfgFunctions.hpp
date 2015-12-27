@@ -6,7 +6,9 @@
 		};
 		class modules{
 			class modulesUnits{preInit = 1;};
-			class modulesIeds{postInit = 1;};
+			//class modulesIeds{};
+			class modulesCivs{};
+			//class modulesJerryCan{};
 		};	
 
 		class server
@@ -16,7 +18,7 @@
 			class serverMissionAllowed{};
 			class serverMissionPrepare{};
 			class serverMissionLoad{};
-			class serverMissionAbort{preInit = 1;};
+			class serverMissionAbort{};
 		};
 
 		class client
@@ -59,6 +61,7 @@
 
 		class mission
 		{
+			class missionFunctions{preInit = 1;};
 			class supportMarkerHeli{};
 			class initMissionVars{};
 			class missionGetRandomLocation{};

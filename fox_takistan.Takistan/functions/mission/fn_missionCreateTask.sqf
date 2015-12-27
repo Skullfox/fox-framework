@@ -5,8 +5,11 @@ _name = _targetArray select 1;
 _missionId = server getVariable "missionId";
 
 _id = format["missionTaskId_%1",_missionId]; 
-_title = format["placeHolderTitle %1",_name]; 
-_text = format["placeHolderText %1",_missionId]; 
 
-[_id,_title,_text ] call SHK_Taskmaster_add;
+_text = [server] call getTaskTranslation;
+
+_title = _text select 0; 
+_desc = _text select 1; 
+
+[_id,_title,_desc] call SHK_Taskmaster_add;
 

@@ -82,13 +82,14 @@ while{count _roads > 0 && count _created_ieds < _number_ieds} do {
 		[_objectToAddActionTo, 0, [], [_actionName,_actionText,"",_actionCode, _condition , {}, _actionParams, _position, _distance] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
 		
 
+		if(dev)then{
+			_markerstr = createMarker ["str_" + str(_iedpos),  _iedpos ];
+			_markerstr setMarkerShape "ELLIPSE";
+			_markerstr setMarkerBrush "Solid";
+			_markerstr setMarkerSize [15,15];
+			_markerstr setMarkerColor "ColorRed";
 
-		_markerstr = createMarker ["str_" + str(_iedpos),  _iedpos ];
-		_markerstr setMarkerShape "ELLIPSE";
-		_markerstr setMarkerBrush "Solid";
-		_markerstr setMarkerSize [15,15];
-		_markerstr setMarkerColor "ColorRed";
-		
+		}		
 	};
 };
 

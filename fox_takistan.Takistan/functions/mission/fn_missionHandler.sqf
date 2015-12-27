@@ -1,12 +1,8 @@
 //Set mission no active to block new ones
-
-//server setVariable ["missionActive",true,true];
-
-_missionId = server getVariable "missionId";
-_missionId = _missionId + 1;
-server setVariable ["missionId",_missionId,true];
-
-server setVariable ["missionEnd",false,true];
-
+// 0 - Mission Type
+// 1 --
+server setVariable ["missionType",_this select 0 ,true];
+server setVariable ["missionActive",true,true];
+server setVariable ["missionId","fox_id_"+ str(time) ,true];
 publicVariable "server";
 
