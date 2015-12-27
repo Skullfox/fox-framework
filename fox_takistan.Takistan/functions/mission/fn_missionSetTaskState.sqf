@@ -1,4 +1,6 @@
-_taskId = format["missionTaskId_%1",missionId];
+_missionId = server getVariable "missionId";
+
+_taskId = format["missionTaskId_%1",_missionId];
 _state =  _this select 0;
 _message = _this select 1;
 _showMessage = _this select 2;

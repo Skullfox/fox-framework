@@ -14,9 +14,5 @@ if(dev)then {sleep 4; }else{sleep 30 };
 
 [_targetArray] call (missionNamespace getVariable format["fox_fnc_missionFile%1",_mtype]);
 
-
-
-//[[_targetArray,_type], "fox_fnc_serverMissionLoad", false] call BIS_fnc_MP;
-//[[_targetArray,_type]] remoteExecCall ["fox_fnc_serverMissionLoad", 2];
 //_center = getArray(configFile >> "CfgWorlds" >> worldName >> "centerPosition");
 

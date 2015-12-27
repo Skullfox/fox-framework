@@ -1,4 +1,5 @@
 call compile preprocessfilelinenumbers "lib\shk_taskmaster.sqf";
+call compile preprocessfilelinenumbers "lib\fox_randomHousePos.sqf";
 
 remoteExecCall ["fox_fnc_missionSettings"];
 remoteExecCall ["fox_fnc_modulesUnits"];

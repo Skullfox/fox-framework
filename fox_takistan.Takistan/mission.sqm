@@ -60,7 +60,8 @@ class Mission
 	randomSeed=5375745;
 	class Intel
 	{
-		briefingName="DEV Takistan";
+		briefingName="GIT - DEV Takistan";
+		overviewText="GIT - DEV Takistan";
 		resistanceWest=0;
 		startWeather=0.69999999;
 		startWind=0.099999994;
@@ -176,7 +177,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={10391.79,257.77734,6457.5762};
+					position[]={10390.633,256.47464,6421.877};
 					azimut=-54.74498;
 					class args
 					{

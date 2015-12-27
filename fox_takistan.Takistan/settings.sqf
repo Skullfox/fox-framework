@@ -25,7 +25,7 @@ enemyEosMarkerSize = [450,450];
 
 /* Mission vars*/
 
-missionClassCrates = ["Box_FIA_Support_F","B_supplyCrate_F"];
+missionClassCrates = ["B_supplyCrate_F"];
 
 /* Marker */
 missionMarkerSize = [400,400];

@@ -63,7 +63,6 @@
 		{
 			class missionFunctions{preInit = 1;};
 			class supportMarkerHeli{};
-			class initMissionVars{};
 			class missionGetRandomLocation{};
 			class missionHandler{};
 			class missionCreateTask{};
