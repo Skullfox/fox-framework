@@ -72,10 +72,13 @@
 			class missionEnd{};
 			class missionSetTaskState{};
 			class missionSpawnEnemies{};
+			class missionTrigger{};
+			class missionCleanUp{};
 		};
 		class missionFiles
 		{
 			class missionFileChache{};
+			class missionFileCleanVillage{};
 		};
 		class ares
 		{

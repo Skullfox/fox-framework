@@ -14,8 +14,9 @@ missionTypes = ["chaches","hvt","clean_village"];
 
 /* Class Settings */
 
-mhqArray = ["CUP_B_HMMWV_Transport_USA",376,"mhq_spawn","mhqMobileMarker"];
-hqArray = ["Land_BagBunker_Large_F",90,"hq_spawn"];
+// Map, MHQ Class, HQ Class
+desertMapPresets = [["Takistan"],"rhsusf_m113d_usarmy_medical","rhsusf_M1083A1P2_B_M2_d_MHQ_fmtv_usarmy","desert"];
+woodMapPresets = [["Chernarus"],"rhsusf_m113_usarmy_medical","Land_BagBunker_Large_F","woodland"];
 
 locationBlacklist = ["Panochori"];
 locationList = ["NameVillage"];
@@ -31,10 +32,6 @@ missionClassCrates = ["B_supplyCrate_F"];
 missionMarkerSize = [400,400];
 missionMarkerColor = "ColorRed";
 missionMarkerBrush = "FDiagonal";
-
-/* Dummy unit */
-missionDummyUnitBox = "O_Truck_02_covered_F";
-
 
 server setVariable ["bs_supportObject","PowGen_Big"];
 

@@ -16,6 +16,20 @@ diag_log format ["#######%1 start server #######",missionName + "_" + worldname]
 };
 */
 
+
+/* Select Preset */
+
+if(worldname in (desertMapPresets select 0) )then{
+
+	worldPreset = desertMapPresets;
+
+}else{
+
+	worldPreset = woodMapPresets;
+
+};
+publicVariable "worldPreset";
+
 /* Mission params */
 
 _missionOrderParam = "missionOrderParam" call BIS_fnc_getParamValue;
@@ -43,16 +57,8 @@ if(_cos isEqualTo 1)then{
 };
 
 
-/* -------------- */
-
-if(dev)then{
-	//_null = [] execVM "scripts\strongpoints.sqf";
-};
-
-
 /* Setup vehicles & stuff */
 
-[] call fox_fnc_initMissionVars;
 [] call fox_fnc_initHq;
 [] call fox_fnc_initMhq;
 [] call fox_fnc_supportMarkerHeli;

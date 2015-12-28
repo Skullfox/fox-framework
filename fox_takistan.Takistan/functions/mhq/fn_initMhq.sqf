@@ -1,9 +1,10 @@
-_mhqClass = mhqArray select 0;
-_mhqDir = mhqArray select 1;
-_mhqMarker = mhqArray select 2;
+_mhqClass = worldPreset select 1;
+
+_mhqMarker = "mhq_spawn";
 
 mhq = _mhqClass createVehicle getmarkerPos _mhqMarker;
-mhq setDir _mhqDir;
+_d = markerDir _mhqMarker;
+mhq setDir _d;
 
 [west, mhq] call BIS_fnc_addRespawnPosition;
 

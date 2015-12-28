@@ -11,5 +11,5 @@ _text = [server] call getTaskTranslation;
 _title = _text select 0; 
 _desc = _text select 1; 
 
-[_id,_title,_desc] call SHK_Taskmaster_add;
+[_id,_title + " - " + str(_name),_desc] call SHK_Taskmaster_add;
 

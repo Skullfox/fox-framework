@@ -11,4 +11,5 @@ _crates = [_targetArray,3] call fox_fnc_missionCreateRandomCrates;
 
 
 waitUntil { (!alive ((server getVariable "missionChaches") select 0) ) AND (!alive ((server getVariable "missionChaches") select 1) ) AND (!alive ((server getVariable "missionChaches") select 2 )) };
+[] call fox_fnc_missionCleanUp; 
 [] call fox_fnc_missionEnd; 

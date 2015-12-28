@@ -19,12 +19,12 @@
 </Key>
 
 
-<Key ID="str_clean_city_xyz">
+<Key ID="str_cleanVillage_title">
 <English>Search and Destroy</English>
 <German>Suchen und Vernichten</German>
 </Key>
 
-<Key ID="str_clean_city_desc">
+<Key ID="str_cleanVillage_desc">
 <English>Clean the OA from all enemy units and destroy the enemy radio generator.</English>
 <German>Säubern sie das Gebiet von Feindeinheiten zerstören sie den Stromgenerator für die Funkanlage. </German>
 </Key>

@@ -1,13 +1,17 @@
 
-_missionId = server getVariable "missionId";
-_posDummy = getMarkerPos format["markerMissionId_%1",_missionId] findEmptyPosition [10,350,missionDummyUnitBox];
-waitUntil {
-	
-	if (count _posDummy > 1) exitWith {true};  // has to return true to continue
-	sleep 1;
-	_posDummy = getMarkerPos format["markerMissionId_%1",_missionId] findEmptyPosition [10,350,missionDummyUnitBox];  
-};
+_pos = _targetArray select 0;
 
-_vehicle = createVehicle [enemyDummyUnit , [ _posDummy select 0,  _posDummy select 1], [], 0, ""];
+
+
+_p = position _pos;
+_center = [_p select 0,_p select 1];
+
+_position = _center findEmptyPosition [0,350,"O_Truck_03_ammo_F"];
+
+systemChat format["Pos: %1",_position];
+
+_vehicle = createVehicle [enemyDummyUnit, _position, [], 0, "NONE"];
 
 createVehicleCrew _vehicle;
+
+_vehicle setVectorUp surfaceNormal position _vehicle;

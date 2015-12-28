@@ -1,4 +1,4 @@
-_mhqMarker = mhqArray select 3;
+_mhqMarker = "mhqMobileMarker";
 
 [mhq,_mhqMarker] spawn {
     

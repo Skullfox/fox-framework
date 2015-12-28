@@ -8,7 +8,7 @@
  */
 
 eos_enemy = "eosUnitsParam" call BIS_fnc_getParamValue;
-eos_enemy = 3;
+eos_enemy = 4;
 //_module = _this select 0;
 
 switch (eos_enemy) do {
@@ -119,14 +119,14 @@ switch (eos_enemy) do {
 	case 4: { 
     enemySide = east;
     enemySupportHeli = "RHS_Mi8mt_Cargo_vdv"; // need cargo for enemySupportPars array  !
-	enemySupportParas = ["ibr_mol_soldier_rifleman","ibr_mol_soldier_rifleman","ibr_mol_soldier_rifleman","ibr_mol_soldier_rifleman", "ibr_mol_soldier_rifleman", "ibr_mol_soldier_rifleman", "ibr_mol_soldier_rifleman", "ibr_mol_soldier_rifleman", "ibr_mol_soldier_rifleman"];
+	enemySupportParas = ["O_mas_med_Insu_AR_F","O_mas_med_Insu_LAT_F","O_mas_med_Insu_MG_F","O_mas_med_Insu_AR_F", "O_mas_med_Insu_AR_F", "O_mas_med_Insu_AR_F", "O_mas_med_Insu_AR_F", "O_mas_med_Insu_AR_F", "O_mas_med_Insu_GL_F"];
 	enemySideStr = "east";
 	enemyTriggerStr = "east";
 	enemySideFactionEos = east;
     
     enemyDummyUnit = "RHS_NSV_TriPod_MSV"; 
 
-	eos_InfPool =	["ibr_mol_soldier_at","ibr_mol_soldier_mg","ibr_mol_soldier_at","ibr_mol_soldier_rifleman", "ibr_mol_soldier_rifleman", "ibr_mol_soldier_medic", "ibr_mol_soldier_medic", "ibr_mol_soldier_ar", "ibr_mol_soldier_rifleman","ibr_mol_soldier_rifleman","ibr_mol_soldier_rifleman"];
+	eos_InfPool =	["O_mas_med_Insu_AR_F","O_mas_med_Insu_SL_F","O_mas_med_Insu_TL_F","O_mas_med_Insu_AR_F", "O_mas_med_Insu_LAT_F", "O_mas_med_Insu_MG_F", "O_mas_med_Insu_MEDIC_F", "O_mas_med_Insu_AR_F", "O_mas_med_Insu_AR_F","O_mas_med_Insu_AR_F","O_mas_med_Insu_GL_F"];
 	eos_ArmPool =	["O_APC_Wheeled_02_rcws_F"];
 	eos_MotPool =	["rhs_tigr_msv","rhs_tigr_ffv_3camo_msv","RHS_UAZ_MSV_01","rhs_uaz_open_MSV_01","rhs_gaz66_msv","RHS_Ural_MSV_01","RHS_Ural_Open_MSV_01"];
 	eos_ACHPool =	["RHS_Mi8MTV3_UPK23_vdv"];
@@ -134,9 +134,9 @@ switch (eos_enemy) do {
 	eos_uavPool =	["I_UAV_01_F"];
 	eos_stPool =	["I_Mortar_01_F"];
 	eos_shipPool =	["O_Boat_Armed_01_hmg_F"];
-	eos_diverPool =	["O_diver_F"];
-	eos_crewPool =	["ibr_mol_soldier_crew"];
-	eos_heliCrew =	["ibr_mol_soldier_pilot"];
+	eos_diverPool =	[];
+	eos_crewPool =	["O_mas_med_Insu_TL_F"];
+	eos_heliCrew =	["O_mas_med_Insu_TL_F"];
     
     };
     

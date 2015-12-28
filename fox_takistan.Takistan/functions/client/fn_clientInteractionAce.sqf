@@ -6,8 +6,11 @@ _abort = ['abort','Mission abbrechen','',{createDialog "missionDialog"; },{true}
 [player, 1, ["ACE_SelfActions","hq_menu"], _abort] call ace_interact_menu_fnc_addActionToObject;
 
 
-_clean_village = ['clean_village','Waffenlager zerstören','',{["Chache",player] call fox_fnc_clientRequestMission},{true}] call ace_interact_menu_fnc_createAction;
-[player, 1, ["ACE_SelfActions", "hq_menu"], _clean_village] call ace_interact_menu_fnc_addActionToObject;
+_chache = ['chache','Waffenlager zerstören','',{["Chache",player] call fox_fnc_clientRequestMission},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions", "hq_menu"], _chache] call ace_interact_menu_fnc_addActionToObject;
+
+_city = ['clean_village','Stadt säubern','',{["CleanVillage",player] call fox_fnc_clientRequestMission},{true}] call ace_interact_menu_fnc_createAction;
+[player, 1, ["ACE_SelfActions", "hq_menu"], _city] call ace_interact_menu_fnc_addActionToObject;
 
 /* Custom Actions */
 
