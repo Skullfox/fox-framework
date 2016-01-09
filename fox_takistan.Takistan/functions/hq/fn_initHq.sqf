@@ -8,8 +8,9 @@ hq setDir _d;
 
 hq allowDamage false;
 
-[west, hq] call BIS_fnc_addRespawnPosition;
-[hq] remoteExecCall ["fox_fnc_prepareActionsHq"];
+//[west, hq] call BIS_fnc_addRespawnPosition;
+
+[hq] remoteExecCall ["fox_fnc_prepareActionsHq",0,true];
 
 hq setVariable ["R3F_LOG_disabled", true];
 
@@ -24,8 +25,18 @@ if(_hqClass isEqualTo "rhsusf_M1083A1P2_B_M2_d_MHQ_fmtv_usarmy")then{
 
 /*Respawn West */
 
-
-_mash = "MASH" createVehicle getmarkerPos "respawn_west";
+// CampEast_EP1 MASH
+_sanClass = "MASH";
+_mash = _sanClass createVehicle getmarkerPos "respawn_west";
 _d = markerDir  "respawn_west";
 _mash allowDamage false;
-_mash setDir (_d - 180); //0° exit on north,we wont it on south , fix it with -180
+
+if(_sanClass isEqualTo "MASH")then{
+
+	_mash setDir (_d - 180); //0° exit on north,we wont it on south , fix it with -180
+
+}else{
+	
+	_mash setDir _d ;
+
+};

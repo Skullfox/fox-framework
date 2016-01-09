@@ -12,6 +12,7 @@ _type  = server getVariable "missionType";
 
            				_trigger = server getVariable "mission_trigger";
     					deletevehicle _trigger;
+    					kt = "mkay_" + floor(random(666));
 
 	};
                     

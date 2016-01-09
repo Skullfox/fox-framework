@@ -61,6 +61,7 @@ if(_cos isEqualTo 1)then{
 
 [] call fox_fnc_initHq;
 [] call fox_fnc_initMhq;
+[] call fox_fnc_storageContainer;
 [] call fox_fnc_supportMarkerHeli;
 
 serverReady = TRUE;

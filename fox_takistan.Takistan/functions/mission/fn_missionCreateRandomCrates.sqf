@@ -4,12 +4,15 @@ _params = _this select 2;
 
 _pos = _targetArray select 0;
 
+
+ private ["_crates","_pos","_params"];
+
 _houses = [position _pos,400] call getHousesWiPositions;
 
 if( (count _houses) isEqualTo 0) then{
 
 	if(dev)then{
-		["no house nearby"] call fox_fnc_log;
+		["no house nearby",2] call fox_fnc_log;
 	};
 	
 
@@ -29,7 +32,7 @@ if( (count _houses) isEqualTo 0) then{
 }else{
 
 	if(dev)then{
-		["houses nearby"] call fox_fnc_log;
+		["houses nearby",2] call fox_fnc_log;
 	};
 	
 	
@@ -50,6 +53,8 @@ if( (count _houses) isEqualTo 0) then{
 	
 };
 
-server setVariable ["missionChaches",_crates,true];
+[_crates] call fox_fnc_log;
 
-true
+server setVariable ["missionChaches",_crates,true];
+publicVariable "server";
+

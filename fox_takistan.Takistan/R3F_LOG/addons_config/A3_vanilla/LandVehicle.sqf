@@ -23,9 +23,9 @@ R3F_LOG_CFG_can_be_lifted = R3F_LOG_CFG_can_be_lifted +
 
 R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
 [
-	["tank", 5],
-	["car", 6],
-	["motorcycle", 2],
+	["tank", 10],
+	["car", 15],
+	["motorcycle", 5],
 	["truck_f", 100],
 	["bus", 30],
 	["kart_01_base_f", 2],

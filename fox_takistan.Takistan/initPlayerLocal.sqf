@@ -40,13 +40,10 @@ if(_customLoadout isEqualTo 1)then{
 
 /* ------------ */
 
+murshun_easywayout_canSuicide = true;
+
 //[] call fox_fnc_sandEffects;
 //[] call fox_fnc_cheatMenu;
 [] call fox_fnc_clientInteractionAce;
 //[] call fox_fnc_modulesJerryCan;
 systemChat "Client ready";
-
-
-
-
-

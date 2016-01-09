@@ -93,4 +93,17 @@
 			class log{};
 		};
 
+		class objects
+		{
+			class spawnBunker{};
+		};
+		class storage
+		{
+			class storageContainer{};
+			class storageObjects{};
+			class storageAction{};
+			class storageCreate{};
+
+		};
+
 	};
