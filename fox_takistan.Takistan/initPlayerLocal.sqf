@@ -1,9 +1,10 @@
 diag_log format ["#######%1 start client#######",missionName + "_" + worldname];
 
+/*
 cutText ["Warte auf Server","BLACK FADED"];
 sleep 5;
 cutText ["Lade...","BLACK IN",3];
-
+*/
 systemChat "Start Client";
 
 
@@ -12,7 +13,7 @@ if(!dev)then{
    [] call fox_fnc_clientIntro;
 
 }else{
-	["Intro skipped"] call fox_fnc_log;
+	 ["Intro skipped"] call fox_fnc_log;
 };
 
 profileNamespace setVariable["fox_uid",getPlayerUID player];

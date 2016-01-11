@@ -6,13 +6,13 @@ diag_log format ["#######%1 start server #######",missionName + "_" + worldname]
 
 /*
 [] spawn{
-	
+
 	while {true} do {
 	  sleep 360;
 	  [50000,["dropped","corpses","wrecks"] ] execVM "scripts\cleanup.sqf";
 
 	};
-	
+
 };
 */
 

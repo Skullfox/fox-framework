@@ -10,7 +10,6 @@ class Mission
 		"A3_Structures_F_Mil_Flags",
 		"aia_takistan_config",
 		"CUP_WheeledVehicles_HMMWV",
-		"A3_Structures_F_Items_Electronics",
 		"a3_modules_f_curator_curator",
 		"3DEN",
 		"A3_Modules_F_Curator_Mines",
@@ -34,7 +33,6 @@ class Mission
 		"mas_usa_sfod_b",
 		"CUP_WheeledVehicles_HMMWV",
 		"A3_Structures_F_Mil_Flags",
-		"A3_Structures_F_Items_Electronics",
 		"cup_misc3_config",
 		"cup_takistan_config"
 	};
@@ -423,7 +421,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=13;
+		items=9;
 		class Item0
 		{
 			position[]={10408.815,256.90573,6436.9351};
@@ -500,59 +498,19 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={10398.961,258.02133,6464.4272};
-			azimut=-190.78575;
-			id=24;
-			side="EMPTY";
-			vehicle="Land_Laptop_unfolded_F";
-			skill=0.60000002;
-			init="this addAction [""Daten herunterladen"", ""laptop.sqf""];";
-		};
-		class Item8
-		{
 			position[]={10391.445,256.94601,6433.8218};
 			azimut=-235.101;
-			id=25;
+			id=24;
 			side="EMPTY";
 			vehicle="Land_Fire_barrel_burning";
 			skill=0.60000002;
 			text="ff";
 		};
-		class Item9
-		{
-			position[]={10400.304,258.10056,6464.7192};
-			azimut=-190.78575;
-			id=26;
-			side="EMPTY";
-			vehicle="Land_Laptop_unfolded_F";
-			skill=0.60000002;
-			init="this addAction [""Daten herunterladen"", ""laptop.sqf""];";
-		};
-		class Item10
-		{
-			position[]={10400.067,258.13724,6465.8154};
-			azimut=-190.78575;
-			id=27;
-			side="EMPTY";
-			vehicle="Land_Laptop_unfolded_F";
-			skill=0.60000002;
-			init="this addAction [""Daten herunterladen"", ""laptop.sqf""];";
-		};
-		class Item11
-		{
-			position[]={10398.656,258.04037,6465.5239};
-			azimut=-190.78575;
-			id=28;
-			side="EMPTY";
-			vehicle="Land_Laptop_unfolded_F";
-			skill=0.60000002;
-			init="this addAction [""Daten herunterladen"", ""laptop.sqf""];";
-		};
-		class Item12
+		class Item8
 		{
 			position[]={10391.942,257.64963,6451.3931};
 			azimut=-29.2218;
-			id=29;
+			id=25;
 			side="EMPTY";
 			vehicle="Fuel_can";
 			leader=1;
