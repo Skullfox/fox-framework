@@ -13,7 +13,7 @@
 		title = "Zivilisten";
 		values[] = {0,1};
 		texts[] = {"Aus","Ein"};
-		default = 0;
+		default = 1;
 	};
 
 	class ambientHeliParam

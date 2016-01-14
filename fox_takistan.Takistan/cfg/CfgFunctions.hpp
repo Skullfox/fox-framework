@@ -9,7 +9,7 @@
 			//class modulesIeds{};
 			class modulesCivs{};
 			//class modulesJerryCan{};
-		};	
+		};
 
 		class server
 		{
@@ -40,9 +40,9 @@
 		class mhq
 		{
 			class teleportMhq{};
-			class initMhq{}; 
-			class mhqMarker{}; 
-		};	
+			class initMhq{};
+			class mhqMarker{};
+		};
 
 		class hq
 		{
@@ -50,7 +50,7 @@
 			class initHq{};
 			class hqStrategicMapTeleport{};
 			class hqStrategicMap{};
-		};	
+		};
 
 		class admin
 		{
@@ -104,6 +104,11 @@
 			class storageAction{};
 			class storageCreate{};
 
+		};
+
+		class hc
+		{
+			class hcInit{};
 		};
 
 	};

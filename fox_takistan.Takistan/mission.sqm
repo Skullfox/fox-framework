@@ -59,7 +59,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=8;
+		items=9;
 		class Item0
 		{
 			side="LOGIC";
@@ -418,6 +418,24 @@ class Mission
 				};
 			};
 		};
+		class Item8
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={10420.001,258.03232,6454.7397};
+					id=17;
+					side="LOGIC";
+					vehicle="HeadlessClient_F";
+					leader=1;
+					skill=0.60000002;
+					text="HC";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -426,7 +444,7 @@ class Mission
 		{
 			position[]={10408.815,256.90573,6436.9351};
 			azimut=210.74001;
-			id=17;
+			id=18;
 			side="EMPTY";
 			vehicle="CUP_B_HMMWV_Crows_M2_USA";
 			leader=1;
@@ -437,7 +455,7 @@ class Mission
 		{
 			position[]={10415.5,257.14865,6438.1968};
 			azimut=210.74001;
-			id=18;
+			id=19;
 			side="EMPTY";
 			vehicle="CUP_B_HMMWV_M2_GPK_USA";
 			leader=1;
@@ -447,7 +465,7 @@ class Mission
 		{
 			position[]={10388.717,257.06479,6433.5376};
 			azimut=321.703;
-			id=19;
+			id=20;
 			side="EMPTY";
 			vehicle="Flag_AAF_F";
 			leader=1;
@@ -460,7 +478,7 @@ class Mission
 		{
 			position[]={10421.79,257.4472,6438.9741};
 			azimut=210.74001;
-			id=20;
+			id=21;
 			side="EMPTY";
 			vehicle="CUP_B_HMMWV_M2_GPK_USA";
 			leader=1;
@@ -470,7 +488,7 @@ class Mission
 		{
 			position[]={10427.339,257.7399,6439.5044};
 			azimut=210.74001;
-			id=21;
+			id=22;
 			side="EMPTY";
 			vehicle="CUP_B_HMMWV_M2_GPK_USA";
 			leader=1;
@@ -480,7 +498,7 @@ class Mission
 		{
 			position[]={10433.149,258.04309,6440.0527};
 			azimut=210.74001;
-			id=22;
+			id=23;
 			side="EMPTY";
 			vehicle="CUP_B_HMMWV_SOV_USA";
 			leader=1;
@@ -490,7 +508,7 @@ class Mission
 		{
 			position[]={10439.724,258.40332,6442.334};
 			azimut=210.74001;
-			id=23;
+			id=24;
 			side="EMPTY";
 			vehicle="CUP_B_HMMWV_Transport_USA";
 			leader=1;
@@ -500,7 +518,7 @@ class Mission
 		{
 			position[]={10391.445,256.94601,6433.8218};
 			azimut=-235.101;
-			id=24;
+			id=25;
 			side="EMPTY";
 			vehicle="Land_Fire_barrel_burning";
 			skill=0.60000002;
@@ -510,7 +528,7 @@ class Mission
 		{
 			position[]={10391.942,257.64963,6451.3931};
 			azimut=-29.2218;
-			id=25;
+			id=26;
 			side="EMPTY";
 			vehicle="Fuel_can";
 			leader=1;

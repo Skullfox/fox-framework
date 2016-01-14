@@ -19,6 +19,8 @@ if(_eosForceUnitsParam isEqualTo 0 )then{
     case ("Takistan"): {eos_enemy = 4;};
     case ("Chernarus"): {eos_enemy = 5;};
     case ("MBG_nam"): {eos_enemy = 5;};
+	case ("Sara_dbe1"): {eos_enemy = 6;};
+	
         default {  eos_enemy = 2;};
   };
 
@@ -187,6 +189,47 @@ switch (eos_enemy) do {
   	eos_diverPool=	[];
   	eos_crewPool=	["I_crew_F"];
   	eos_heliCrew=	["I_helicrew_F","I_helipilot_F"];
+
+    };
+	
+	
+	//asdf abändern in einheiten abkürzung
+    case 6: {
+
+
+	
+    enemySide = east;
+    enemySupportHeli = "RHS_Mi8mt_Cargo_vdv"; // need cargo for enemySupportPars array  !
+	enemySupportParas = ["rhs_msv_rifleman","rhs_msv_rifleman","rhs_msv_rifleman","rhs_msv_medic", "rhs_msv_LAT", "rhs_msv_strelok_rpg_assist", "rhs_msv_grenadier_rpg", "rhs_msv_efreitor", "rhs_msv_grenadier_rpg"];
+	enemySideStr = "east";
+	enemyTriggerStr = "east";
+	enemySideFactionEos = east;
+
+    enemyDummyUnit = "RHS_NSV_TriPod_MSV";
+
+	eos_InfPool =	[
+		"rhs_msv_sergeant",
+		"rhs_msv_efreitor",
+		"rhs_msv_grenadier_rpg",
+		"rhs_msv_strelok_rpg_assist",
+		"rhs_msv_machinegunner",
+		"rhs_msv_LAT",
+		"rhs_msv_strelok_rpg_assist",
+		"rhs_msv_medic",
+		"rhs_msv_rifleman"
+	];
+	
+	
+	eos_ArmPool =	["rhs_bmp1_msv","rhs_bmp2_msv","rhs_bmp3_msv","rhs_btr70_msv","rhs_btr80a_msv"];
+	eos_MotPool =	["rhs_tigr_msv","rhs_tigr_ffv_3camo_msv","RHS_UAZ_MSV_01","rhs_uaz_open_MSV_01","rhs_gaz66_msv","RHS_Ural_MSV_01","RHS_Ural_Open_MSV_01"];
+	eos_ACHPool =	["RHS_Mi8MTV3_UPK23_vdv"];
+	eos_CHPool =	["RHS_Mi8mt_Cargo_vdv"];
+	eos_uavPool =	[];
+	eos_stPool =	[];
+	eos_shipPool =	[];
+	eos_diverPool =	[];
+	eos_crewPool =	["rhs_msv_driver"];
+	eos_heliCrew =	["rhs_msv_sergeant"];
 
     };
 
