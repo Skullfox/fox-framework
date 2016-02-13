@@ -39,12 +39,24 @@ if(_customLoadout isEqualTo 1)then{
 
 };
 
-/* ------------ */
 
+[] spawn{
+  while {true} do{
+    "client_fps" setMarkerText format ["Client FPS: %1", (floor diag_fps)];
+    sleep 3;
+  }
+};
+
+
+/* ------------ */
+player setVariable ["BIS_noCoreConversations", true];
 murshun_easywayout_canSuicide = true;
 
-//[] call fox_fnc_sandEffects;
+[] call fox_fnc_sandEffects;
 //[] call fox_fnc_cheatMenu;
+
 [] call fox_fnc_clientInteractionAce;
 //[] call fox_fnc_modulesJerryCan;
 systemChat "Client ready";
+[] call fox_fnc_clientRegisterPilots;
+#include "SHK_Fastrope.sqf"

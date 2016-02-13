@@ -1,7 +1,12 @@
-_pos = _this select 0;
+_arg = _this select 0;
+_pos = _arg select 0;
+_player = _arg select 1;
+_veh = _arg select 2;
 
-if(alive mhq)then{
-	player moveincargo mhq;
+hint format["%1",_pos];
+
+if(alive _veh)then{
+	_player moveincargo _veh;
 }else{
-	hint "MHQ is not available";
+	hint "Fahrzeug ist nicht verfügbar";
 };

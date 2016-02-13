@@ -1,8 +1,5 @@
-dev = false;
+dev = false;;
 eosDev = false;
-
-
-
 
 leightsCiv = [];
 leightsVeh = [];
@@ -16,10 +13,12 @@ missionTypes = ["chaches","hvt","clean_village"];
 
 // Map, MHQ Class, HQ Class
 desertMapPresets = [["Takistan"],"rhsusf_m113d_usarmy_medical","rhsusf_M1083A1P2_B_M2_d_MHQ_fmtv_usarmy","desert"];
-woodMapPresets = [["Chernarus","Sara_dbe1"],"rhsusf_m113_usarmy_medical","Land_BagBunker_Large_F","woodland"];
+woodMapPresets = [["Chernarus","Sara_dbe1","pja310"],"rhsusf_m113_usarmy_medical","M1130_HQ_unfolded_Base_EP1","woodland"];
 
 locationBlacklist = ["Panochori","Pita"];
 locationList = ["NameVillage"];
+
+groundServiceClass = "US_WarfareBVehicleServicePoint_Base_EP1";
 
 enemySpawnZoneEosDistance = 2000;
 enemyEosMarkerSize = [450,450];

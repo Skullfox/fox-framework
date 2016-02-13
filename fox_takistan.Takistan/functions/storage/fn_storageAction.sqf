@@ -12,11 +12,7 @@ _player = player,
 
 	_class = _x select 0;
 	_title = _x select 1;
-	
-	_container addAction [_title,{ [5, _this select 3, { call fox_fnc_storageCreate  }, {hint "Aborted"}, "Preparing " + str( (_this select 3) select 0 ) ] call ace_common_fnc_progressBar; [[ _this select 1 ,"AmovPercMstpSrasWrflDnon_gear"],"playMove"] call BIS_fnc_MP; },[_class,_sign], 0, false, true, "", "player distance _target < 6 AND vehicle player == player"];
+	_container addAction [_title, { [_this select 3] call fox_storageCreate }, [_class,_this select 1] ];
+
 
 }foreach _objectsArray;
-
-
-
-

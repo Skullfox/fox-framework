@@ -29,6 +29,9 @@
 			class clientCustomMessage{};
 			class clientActionJoinGroup{};
 			class clientCustomLoadout{};
+			class clientRegisterPilots{};
+			class clientSwitchToPilot{};
+			class clientSwitchReturn{};
 		};
 
 		class effects
@@ -41,7 +44,6 @@
 		{
 			class teleportMhq{};
 			class initMhq{};
-			class mhqMarker{};
 		};
 
 		class hq
@@ -109,6 +111,16 @@
 		class hc
 		{
 			class hcInit{};
+		};
+
+		class marker
+		{
+			class markerFollow{};
+		};
+
+		class service
+		{
+			class vehicleService{};
 		};
 
 	};

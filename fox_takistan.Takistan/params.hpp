@@ -33,7 +33,7 @@
 	};
 
 
-	class eosForceUnitsParam
+	class forceUnitsParam
 	{
 		title = "Einheiten via Parameter";
 		values[] = {0,1,};
@@ -70,7 +70,7 @@
 		title = "Spawn mit Custom Loadout";
 		values[] = {0,1};
 		texts[] = {"Nein,Ja"};
-		default = 0;
+		default = 1;
 	};
 
 };

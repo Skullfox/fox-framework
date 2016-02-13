@@ -1,10 +1,28 @@
 
+
+_container addAction [_title,{
+
+[_this select 3,"fox_fnc_storageCreate",false] call BIS_fnc_MP;
+
+	[5, _this select 3, {
+
+
+
+[[ _this select 1 ,"AmovPercMstpSrasWrflDnon_gear"],"playMove"] call BIS_fnc_MP; }];
+
+
 _arg = _this select 0;
 
 _class = _arg select 0;
 _sign =  _arg select 1;
 
 _psign = position _sign;
+
+
+[{
+
+
+},"BIS_fnc_spawn"] call BIS_fnc_MP;
 
 [_sign] spawn{
 

@@ -5,6 +5,7 @@ remoteExecCall ["fox_fnc_missionSettings"];
 remoteExecCall ["fox_fnc_modulesUnits"];
 
 /* place all execVM  in the "VM/init.sqf" */
-[]execVM "VM\init.sqf";
+//#include <T8\MACRO.hpp>
+#include "VM\init.sqf";
 [-1] call BIS_fnc_paramGuerFriendly;
 [] call fox_fnc_hcInit;

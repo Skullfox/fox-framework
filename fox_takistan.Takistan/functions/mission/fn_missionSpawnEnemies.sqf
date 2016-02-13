@@ -11,8 +11,10 @@ _markerstr setMarkerSize missionMarkerSize;
 _markerstr setMarkerColor missionMarkerColor;
 
 _params = ["markerMissionEosId_" + str(_missionId)],[5,3],[6,3],[3,1],[2],[0],[0,0],[5,1,enemySpawnZoneEosDistance,enemySideFactionEos ,TRUE,eosDev];
+[ _params ] call EOS_Spawn;
 
-if(hcActive)then{
+/*
+if(false)then{
 
   _params remoteExec ["EOS_Spawn",hcId];
   	["hc active",3] call "fox_fnc_log";
@@ -21,3 +23,4 @@ if(hcActive)then{
   [ _params ] call EOS_Spawn;
   	["hc not active",3] call "fox_fnc_log";
 }
+*/

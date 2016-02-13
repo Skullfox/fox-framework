@@ -52,7 +52,7 @@ if(_ieds isEqualTo 1)then{
 _cos = "cosParam" call BIS_fnc_getParamValue;
 if(_cos isEqualTo 1)then{
 
-	[] call fox_fnc_modulesCivs;
+	//[] call fox_fnc_modulesCivs;
 
 };
 
@@ -63,5 +63,15 @@ if(_cos isEqualTo 1)then{
 [] call fox_fnc_initMhq;
 [] call fox_fnc_storageContainer;
 [] call fox_fnc_supportMarkerHeli;
+[] call fox_fnc_vehicleService;
+
+
+[] spawn{
+  while {true} do{
+    "server_fps" setMarkerText format ["Server FPS: %1", (floor diag_fps)];
+    sleep 3;
+  }
+};
+
 
 serverReady = TRUE;

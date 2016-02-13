@@ -1,4 +1,4 @@
-Author = "[FOX] Shiragami"; 
+Author = "[FOX] Shiragami";
 loadScreen = "assets\img\loadscreen.jpg";
 OnLoadName = "";
 respawn = 3;
@@ -11,9 +11,9 @@ respawnTemplates[] = {"MenuPosition"};
 #include "R3F_LOG\desc_include.h"
 class Header
 {
-	gameType = COOP;       
-	minPlayers = 1;        
-	maxPlayers = 30;  
+	gameType = COOP;
+	minPlayers = 1;
+	maxPlayers = 30;
 
 };
 
@@ -27,6 +27,7 @@ class Header
 
 class CfgFunctions
 {
+	#include <T8\FUNCTIONS.hpp>
 	#include "cfg\CfgFunctions.hpp"
 };
 

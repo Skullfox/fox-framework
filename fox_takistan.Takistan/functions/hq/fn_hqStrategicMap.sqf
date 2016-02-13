@@ -3,16 +3,26 @@ _mappos = [getMarkerpos "hq_spawn" select 0, getMarkerpos "hq_spawn" select 1, 1
     "",
     _mappos,
     [
-       
+
         [
-            getMarkerPos "mhqMobileMarker",  
+            getMarkerPos "mhqMobileMarker",
             { [_this select 9] call fox_fnc_hqStrategicMapTeleport},
             "Mobiles Hauptquartier",
             "Mobiler Respawn Punkt",
             "",
-            "assets\img\loadscreen.jpg",
+            "assets\img\base.jpg",
             1,
-            [getMarkerPos "mhqMobileMarker",player]
+            [getMarkerPos "mhqMobileMarker",player,mhq]
+        ],
+        [
+            getMarkerPos "mhq_air_marker",
+            { [_this select 9] call fox_fnc_hqStrategicMapTeleport},
+            "Mobiles Hauptquartier",
+            "Medevac Respawn Punkt",
+            "",
+            "assets\img\medevac.jpg",
+            1,
+            [getMarkerPos "mhq_air_marker",player,mhqAir]
         ]
     ],
     [],
